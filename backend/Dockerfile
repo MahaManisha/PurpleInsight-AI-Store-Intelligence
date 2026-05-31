@@ -45,7 +45,7 @@ COPY data /app/data
 EXPOSE 8000
 
 # Create and run under secure non-root context
-RUN groupadd -r purple && useradd -no-log-init -r -g purple purple && chown -R purple:purple /app
+RUN groupadd -r purple && useradd --no-log-init -r -g purple purple && chown -R purple:purple /app
 USER purple
 
 # Start Uvicorn Server
