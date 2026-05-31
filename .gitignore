@@ -35,3 +35,11 @@ Desktop.ini
 edge/data/events.jsonl
 edge/output/
 data/CCTV Footage/
+
+# Challenge datasets and videos
+data/*.csv
+data/*.xlsx
+*.mp4
+*.avi
+*.mov
+
