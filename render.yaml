@@ -10,6 +10,7 @@ services:
     name: purple-backend
     env: docker
     dockerfilePath: backend/Dockerfile
+    dockerContext: . # Root context required to copy backend/ and data/
     plan: free
     envVars:
       - key: DATABASE_URL
@@ -24,6 +25,7 @@ services:
     name: purple-frontend
     env: docker
     dockerfilePath: frontend/Dockerfile
+    dockerContext: frontend # Subdirectory context required to copy HTML assets
     plan: free
     envVars:
       - key: PORT
