@@ -1,10 +1,10 @@
-services:
+databases:
   # Database Service (PostgreSQL 15)
-  - type: db
-    name: purple-postgres
+  - name: purple-postgres
     plan: free
     ipAllowList: [] # Only allow internal connection within the Render account
 
+services:
   # Backend Web Service (FastAPI)
   - type: web
     name: purple-backend
