@@ -1,19 +1,13 @@
 # ==============================================================================
-# PurpleInsight — Windows PowerShell Stack Deployment Orchestrator
+# PurpleInsight - Windows PowerShell Stack Deployment Orchestrator
 # ==============================================================================
 
 Clear-Host
 
-Write-Host "======================================================================" -ForegroundColor Purple
-Write-Host "  ██████╗ ██╗   ██╗██████╗ ██████╗ ██╗     ███████╗██╗███╗   ██╗ ██████╗██╗  " -ForegroundColor Purple
-Write-Host "  ██╔══██╗██║   ██║██╔══██╗██╔══██╗██║     ██╔════╝██║████╗  ██║██╔════╝██║  " -ForegroundColor Purple
-Write-Host "  ██████╔╝██║   ██║██████╔╝██████╔╝██║     █████╗  ██║██╔██╗ ██║██║  ███╗██║  " -ForegroundColor Purple
-Write-Host "  ██╔═══╝ ██║   ██║██╔══██╗██╔═══╝ ██║     ██╔══╝  ██║██║╚██╗██║██║   ██║╚═╝  " -ForegroundColor Purple
-Write-Host "  ██║     ╚██████╔╝██║  ██║██║     ███████╗███████╗██║██║ ╚████║╚██████╔╝██╗  " -ForegroundColor Purple
-Write-Host "  ╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚══════╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  " -ForegroundColor Purple
-Write-Host "======================================================================" -ForegroundColor Purple
-Write-Host "        PurpleInsight AI Store Intelligence — Full Stack Ingestion & UI" -ForegroundColor Blue
-Write-Host "======================================================================" -ForegroundColor Purple
+Write-Host "======================================================================" -ForegroundColor Magenta
+Write-Host "                PurpleInsight AI Store Intelligence" -ForegroundColor Magenta
+Write-Host "        Full Stack Ingestion and UI Dashboard Local Orchestrator" -ForegroundColor Blue
+Write-Host "======================================================================" -ForegroundColor Magenta
 Write-Host ""
 
 # 1. Prerequisite Checks
@@ -31,7 +25,7 @@ if ($LASTEXITCODE -ne 0) {
     Write-Host "Please verify your Docker Desktop Compose integration and retry." -ForegroundColor Yellow
     Exit 1
 }
-Write-Host "  ✓ Docker & Docker Compose are available." -ForegroundColor Green
+Write-Host "  [OK] Docker and Docker Compose are available." -ForegroundColor Green
 Write-Host ""
 
 # 2. Variable Compilation

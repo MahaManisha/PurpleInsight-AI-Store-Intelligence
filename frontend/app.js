@@ -2,7 +2,9 @@
 
 // Active configuration
 const CONFIG = {
-  API_BASE_URL: "http://localhost:8000/api/v1",
+  API_BASE_URL: (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+    ? "http://localhost:8000/api/v1"
+    : window.location.origin.replace("-frontend", "-backend") + "/api/v1",
   POLL_INTERVAL_MS: 3000,
   DEFAULT_STORE_ID: "store-7ef38ab2-1456-42d4-a0fb-365922e3914a"
 };

@@ -26,6 +26,8 @@ def create_app(config_path: str = "backend/config/backend_config.yaml") -> FastA
     
     # 1. Load backend configuration
     database_url = os.getenv("DATABASE_URL", "sqlite:///store_intelligence.db")
+    if database_url and database_url.startswith("postgres://"):
+        database_url = database_url.replace("postgres://", "postgresql://", 1)
     rate_limit_rpm = 120
     
     if os.path.exists(config_path):
